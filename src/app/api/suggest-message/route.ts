@@ -55,3 +55,9 @@
 
 //   return new StreamingTextResponse(result.toAIStream());
 // }
+export async function POST(request:Request){
+    return Response.json(
+        {message:"This api i no longer active"},
+        {status:200}
+    )
+}
