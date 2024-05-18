@@ -28,7 +28,7 @@ import { verifySchema } from "@/schema/verifySchema"
 
 type Props = {}
 
-export default function page({ }: Props) {
+export default function Verify({ }: Props) {
     const router = useRouter()
     const param = useParams<{ email: string }>()
     const { toast } = useToast()

@@ -18,7 +18,7 @@ import { log } from 'console'
 
 type Props = {}
 
-export default function page({ }: Props) {
+export default function Dashboard({ }: Props) {
   const [messages, setmessages] = useState<Message[]>([])
   const [isLoading, setisLoading] = useState(false)
   const [isSwitchLoading, setisSwitchLoading] = useState(false)

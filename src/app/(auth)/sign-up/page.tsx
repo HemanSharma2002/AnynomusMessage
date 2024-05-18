@@ -26,7 +26,7 @@ import { Loader2 } from "lucide-react"
 
 type Props = {}
 
-export default function page({ }: Props) {
+export default function Signup({ }: Props) {
   const [username, setUsername] = useState("")
   const [message, setmessage] = useState("")
   const [isCheckingUsername, setisCheckingUsername] = useState(false)
