@@ -32,9 +32,10 @@ export default function Verify({ }: Props) {
     const router = useRouter()
     const param = useParams<{ email: string }>()
     const { toast } = useToast()
-    const form = useForm({
+    const form = useForm<z.infer<typeof verifySchema>>({
         resolver: zodResolver(verifySchema),
     })
+    
     const [isSubmitting, setisSubmitting] = useState(false)
     async function onSubmit (data: z.infer<typeof verifySchema>){
         try {
